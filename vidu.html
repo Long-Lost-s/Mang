@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let car = ["Vinfast" , "BMW" , "Range Rover"];
+    document.write(car.sort() + "<br>");
+    document.write(car.reverse());
+</script>
+<script>
+    let number = [5, 101, 89, 34, 2, 8984, 98];
+    number.sort(function (a, b) {
+        return a - b
+    })
+    document.write(number + "<br>");
+    number.sort(function (a, b) {
+        return b - a
+    })
+    document.write(number);
+</script>
+</body>
+</html>
