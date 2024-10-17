@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai 1-->
+<script>
+  for (let i = 1; i <=100 ; i++) {
+    document.write(i + "<br>");
+    if (i ===99 ){
+      document.write("da dem den 99" + "<br>");
+    }
+  }
+</script>
+<!--bai 2-->
+<script>
+  let nhietdo=parseFloat(prompt("nhap nhiet do"));
+  if (nhietdo>100){
+    document.write("nhiet do qua cao, giam nhiet do")
+  } else if (nhietdo<20){
+    document.write("nhiet do qua thap, tang nhiet do");
+  } else {
+    document.write("nhiet do on dinh");
+  }
+</script>
+<script>
+  let text="";
+  let i=parseFloat(prompt("nhap i"));
+  do {
+text = "tang nhiet do";
+    document.write(text);
+i++;
+  } while (i<20);
+  do {
+    text = "giam nhiet do";
+    document.write(text);
+    i++;
+  } while (i>100);
+  do {
+    text ="nhiet do on dinh";
+    document.write(text);
+    i++;
+  } while (20<=i<=100);
+
+</script>
+<!--bai 3-->
+<script>
+  let a1=0, a2=1, afterthat;
+  for (let i = 1; i <=20 ; i++) {
+    document.write(a1 + "<br>")
+    afterthat = a1 + a2;
+    a1=a2;
+    a2=afterthat;
+  }
+  document.write(" tren day la 20 so dau tien trong day so fibonacci");
+</script>
+<!--bai 4-->
+<script>
+  let a1=0, a2=1, afterthat;
+  while (true){
+    afterthat=a1+a2;
+    if (afterthat % 5 === 0){
+      document.write("so dau tien trong day fibonacci chia het cho 5 la " + afterthat);
+      break;
+    }
+    a1=a2;
+    a2=afterthat;
+  }
+</script>
+<!--Bai 5-->
+<script>
+  let a1 = 0, a2 = 1, afterthat;
+  let total = a1+a2;
+  for (let i = 1; i <=20 ; i++) {
+    afterthat=a1+a2;
+    total +=afterthat;
+    a1=a2;
+    a2=afterthat;
+  }
+  document.write("tong la: " + total);
+</script>
+<!--Bai 6-->
+<script>
+  let count=0;
+  let total=0;
+  let num=7;
+  while (count<=30){
+    if (num % 7 === 0){
+      total +=num;
+      count++;
+    }
+    num++;
+  }
+  document.write(total);
+</script>
+<!--bai 7-->
+<script>
+    const Fizz="Fizz";
+    const Buzz="Buzz";
+for (let i = 1; i <=100 ; i++) {
+if (i % 15 === 0 ){
+document.write("FizzBuzz" + "<br>");
+} else if (i % 5 === 0){
+  document.write("Buzz" + "<br>");
+} else if (i % 3 === 0){
+  document.write("Fizz" + "<br>");
+}else {
+    document.write(i + "<br>");
+}
+}
+</script>
+<!--bai 8-->
+<script>
+
+</script>
+</body>
+</html>
