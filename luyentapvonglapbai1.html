@@ -8,10 +8,10 @@
 <!--bai 1-->
 <script>
   for (let i = 1; i <=100 ; i++) {
-    document.write(i + "<br>");
     if (i ===99 ){
       document.write("da dem den 99" + "<br>");
     }
+      document.write(i + "<br>");
   }
 </script>
 <!--bai 2-->
@@ -99,13 +99,14 @@ i++;
 <script>
     const Fizz="Fizz";
     const Buzz="Buzz";
+    const Fizzbuzz="FizzBuzz";
 for (let i = 1; i <=100 ; i++) {
 if (i % 15 === 0 ){
-document.write("FizzBuzz" + "<br>");
+document.write(Fizzbuzz + "<br>");
 } else if (i % 5 === 0){
-  document.write("Buzz" + "<br>");
+  document.write(Buzz + "<br>");
 } else if (i % 3 === 0){
-  document.write("Fizz" + "<br>");
+  document.write(Fizz + "<br>");
 }else {
     document.write(i + "<br>");
 }

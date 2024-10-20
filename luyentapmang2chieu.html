@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=[[2, 3, 5], 
+           [4, 5, 8], 
+           [6, 7, 8]];
+    let total = 0;
+    // for (let i = 0; i < x.length; i++) {
+    //     total +=x[i][i]
+    // }
+    // document.write(total);
+    for (let i = 0; i < x.length; i++) {
+        total+=x[i][x.length-i-1]
+    }
+    document.write(total);
+</script>
+</body>
+</html>
